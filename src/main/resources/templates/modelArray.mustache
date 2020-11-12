@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>modelArray</h1>
+<hr/>
+<h2>{{members}}</h2>
+<hr/>
+{{members.0.id}}
+{{members.0.username}}
+{{members.0.phone}}
+<hr/>
+{{#members}}
+	<h2>{{id}}</h2>	
+	<h2>{{username}}</h2>	
+	<h2>{{phone}}</h2>
+{{/members}}
+<hr/>
+{{user}}
+<hr/>
+<h1>반전</h1>
+{{#user}}
+	<h2>유저가 있습니다.</h2>
+{{/user}}
+<hr/>
+{{^user}}
+	<h2>유저가 없습니다.</h2>
+{{/user}}
+</body>
+</html>
